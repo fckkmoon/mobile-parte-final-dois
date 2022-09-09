@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="0dp">
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="390dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="235dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/botaoafazeres"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="120dp"
+            android:backgroundTint="#8C8C8C"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/afazeres"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/img_1"
+            app:iconSize="35dp"
+            app:iconTint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/botaocompletos"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="120dp"
+            android:backgroundTint="#8C8C8C"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/completos"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/img_3"
+            app:iconSize="40dp"
+            app:iconTint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botaoafazeres" />
+
+        <Button
+            android:id="@+id/botaotodas"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="300dp"
+            android:backgroundTint="#8C8C8C"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/todas"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/img_4"
+            app:iconSize="45dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botaocompletos"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="73dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="660dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/favoritos"
+            android:scaleType="fitXY"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.477"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="233dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="63dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintBottom_toTopOf="@+id/botaoafazeres"
+            app:layout_constraintEnd_toStartOf="@+id/botaomapa"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/logoapp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="390dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="42dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/botaoafazeres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="229dp"
+            android:layout_marginBottom="248dp"
+            android:text="@string/minhas_listas"
+            android:textColor="#CE3E3E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="390dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="235dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/botaocompras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="271dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/compras"
+            android:textColor="#000000"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider2"
+            app:rippleColor="#000000"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/botaofilmes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="171dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/filmes"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/botaoferias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botaocompras"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/botaoferias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/programacao_de_ferias"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/compras"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/botaocompras"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/botaocompras"
+            app:layout_constraintVertical_bias="0.52"
+            app:srcCompat="@drawable/bola" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/filmes"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/botaofilmes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/botaofilmes"
+            app:srcCompat="@drawable/bola" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="60dp"
+            android:contentDescription="@string/programacao_de_ferias"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/botaoferias"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/botaoferias"
+            app:layout_constraintVertical_bias="0.409"
+            app:srcCompat="@drawable/bola" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="52dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="#FFFFFF"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/lixo"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/img_5"
+            app:iconSize="22dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/botaomapa"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="660dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/mapa"
+            app:icon="@drawable/img_6"
+            app:iconSize="50dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
